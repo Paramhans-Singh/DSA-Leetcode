@@ -1,5 +1,5 @@
 class Solution {
-    public double myPow(double x, int n) {
+    public static double myPow(double x, int n) {
         if (n == 0) {
             return 1;
         }
@@ -17,7 +17,7 @@ class Solution {
         return (helper(x, even) * helper(x, odd));
     }
     
-    static double helper(double num, int n) {
+    public static double helper(double num, int n) {
         if (n == 0) {
             return 1;
         }
