@@ -1,2 +1,3 @@
-# DSA-Leetcode
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub v2](https://github.com/arunbhardwaj/LeetHub-2.0)
+# Problem Solving - Leetcode
+ - Solved Striver A2Z Sheet Questions
+ - Practicing Problem Solving (DSA)
