@@ -77,8 +77,8 @@ class Solution {
             l2 = (l2 != null) ? l2.next : null;
         }
 
-        ListNode result = dummyHead.next;
-        dummyHead.next = null;
-        return result;
+        // ListNode result = dummyHead.next;
+        // dummyHead.next = null;
+        return dummyHead.next;
     }
 }
