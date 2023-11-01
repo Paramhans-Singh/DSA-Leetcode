@@ -43,8 +43,8 @@ public class Solution {
 
     private void inorder(TreeNode root, List<Integer> result) {
         if (root == null) return;
-        result.add(root.val);
         inorder(root.left, result);
+         result.add(root.val);
         inorder(root.right, result);
     }
 }
