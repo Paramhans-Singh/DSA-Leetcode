@@ -10,7 +10,7 @@ class Solution {
            mask = (mask<<1) | 1;
            temp = temp>>1;
         }
-        ans = ~n & mask;
-        return ans;
+        // ans = ~n & mask;
+        return mask ^ n;
     }
 }
