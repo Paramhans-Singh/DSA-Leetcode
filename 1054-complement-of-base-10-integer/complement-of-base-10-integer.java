@@ -11,6 +11,11 @@ class Solution {
            temp = temp>>1;
         }
         // ans = ~n & mask;
-        return mask ^ n;
+        // return ans;
+        return mask ^ n; 
     }
 }
+
+// as n + complement(n) = 1111
+//  addition or (|)
+// subtraction xor (^)
