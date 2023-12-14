@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column">2606. Difference Between Ones and Zeros in Row and Column</a></h2><h3>Medium</h3><hr><p>You are given a <strong>0-indexed</strong> <code>m x n</code> binary matrix <code>grid</code>.</p>
+<h2><a href="https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column">Difference Between Ones and Zeros in Row and Column</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>You are given a <strong>0-indexed</strong> <code>m x n</code> binary matrix <code>grid</code>.</p>
 
 <p>A <strong>0-indexed</strong> <code>m x n</code> difference matrix <code>diff</code> is created with the following procedure:</p>
 
