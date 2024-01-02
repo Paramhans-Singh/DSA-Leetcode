@@ -2,28 +2,36 @@
 
 class Solution {
     public List<List<Integer>> findMatrix(int[] v) {
-        Map<Integer, Integer> um = new HashMap<>();
+        HashMap<Integer, Integer> temp = new HashMap<>();
         for (int i : v) {
-            um.put(i, um.getOrDefault(i, 0) + 1);
+            temp.put(i, temp.getOrDefault(i, 0) + 1);
         }
         
         List<List<Integer>> ans = new ArrayList<>();
-        while (!um.isEmpty()) {
-            List<Integer> temp = new ArrayList<>();
+
+        while (!temp.isEmpty()) {
+
+            List<Integer> curr = new ArrayList<>();
             List<Integer> toErase = new ArrayList<>();
-            for (Map.Entry<Integer, Integer> entry : um.entrySet()) {
-                int f = entry.getKey();
-                int s = entry.getValue();
-                temp.add(f);
+            
+            for (Map.Entry<Integer, Integer> ele : temp.entrySet()) {
+                int f = ele.getKey();
+                int s = ele.getValue();
+
+                curr.add(f);
                 s--;
+
                 if (s == 0) {
                     toErase.add(f);
                 }
-                um.put(f, s);
+
+                temp.put(f, s);
             }
-            ans.add(temp);
+
+            ans.add(curr);
+
             for (int i : toErase) {
-                um.remove(i);
+                temp.remove(i);
             }
         }
         return ans;
