@@ -7,7 +7,8 @@ class Solution {
                 if(nums[i] > nums[i+1]){
                     flag = 1;
                 }
-            }else{
+            }
+            else{
                 if(nums[0] < nums[i] || nums[i] > nums[i+1])                 {
                     status = false;
                     break;
@@ -16,6 +17,7 @@ class Solution {
             i++;
         }
         if(flag == 1 && nums[0] < nums[i]) status = false;
+        // last number ki checking ke liye hai 
         return status;
     }
 }
