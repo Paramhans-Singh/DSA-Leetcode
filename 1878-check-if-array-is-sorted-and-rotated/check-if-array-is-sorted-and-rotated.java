@@ -17,7 +17,7 @@ class Solution {
             i++;
         }
         if(flag == 1 && nums[0] < nums[i]) status = false;
-        // last number ki checking ke liye hai 
+        // last number ki checking ke liye hai
         return status;
     }
 }
